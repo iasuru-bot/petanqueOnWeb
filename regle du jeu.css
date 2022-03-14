@@ -1,0 +1,59 @@
+body
+	{
+    font-family: "Chesan Regular"'Open Sans', sans-serif;
+ 	src: local("./Chesan Regular.otf") format(".otf");
+	font-size: 23px;
+	width: 650px;
+	background: no-repeat center/90% url("https://zupimages.net/up/20/23/x3lx.png");
+	background-color: #78c6bb ;
+	background-position: top;
+	}
+header
+	{
+	text-align: center;
+	}
+
+#sous_titre
+	{
+	position: fixed;
+	top:150px; left: 731.735px;
+	font-weight: bolder;
+	font-size: 50px;
+	text-decoration: underline;
+	text-align: center;
+	}
+    
+
+#titre_solo, #titre_deroulement {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+#solo {
+	position: fixed;
+	top: 600px; left: 539.985px;
+	text-align: center;
+
+}
+#deroulement {
+	position: fixed;
+	top: 320px;
+	left: 398.43px;
+	text-align: center;
+}
+#retour,#sources {
+	border-radius:16px 0 16px 0;
+	background: #d34836;
+	border:none;
+	color:#fff;
+	font:bold 12px Verdana;
+	padding:8px 0 8px 0;
+	position: fixed;
+}
+#sources{
+	position: fixed;
+	top:860px;
+	left: 937px;
+}
+/*Pour calculer le centre : prendre la largeur totale et la diviser par deux (1920/2=960). Ensuite, Crtl+Maj+I, inspecter l'élément pour trouver sa longueur.
+La diviser par deux et la soustraire à 960 */

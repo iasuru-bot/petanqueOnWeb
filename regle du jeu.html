@@ -1,0 +1,56 @@
+<!DOCTYPE html >
+<html >
+	<head >
+		<meta charset="utf-8" />
+		<meta name="regle" content="les_regles_du_jeu">
+		<title>Règles - PoT</title>
+		<link rel="stylesheet" href="regle du jeu.css">
+		<link rel="shortcut icon" href="http://www.iconj.com/ico/3/8/38fd64eand.ico" type="image/x-icon" />
+		<script src="règles.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		
+			
+		<div id="sous_titre">
+			<p> Différents modes de jeu:</p>
+		</div>    	
+		
+			  
+		
+		<div id = "deroulement">
+			<p id=titre_deroulement>Déroulement du jeu: </p>
+			<p>Vous êtes placé dans un cercle prédéfini au début du terrain.
+			</br> Le cochonnet étant placé aléatoirement entre 6 et 10 mètres de vous
+			</br>Il vous faut lancer votre boule de pétanque avec un angle et une force adaptés à la situation.
+			</br> Votre score vous sera donné et vous pourrez essayer de l’améliorer au prochain lancer.
+			</br> Si vous jouez contre quelqu’un, le joueur le plus proche du cochonnet remporte un point, et le premier à 13 points gagne la partie.
+			</br> N’oubliez pas que vous jouez sur un terrain de sable ! 
+			</br>Les boules de pétanque ne rebondissent donc pas mais elles roulent : soyez précis, et bon jeu !</p>
+		</div> 
+		<div id = "regles du jeu">
+			<p>
+			<div id="solo">
+					<p id=titre_solo>Mode de jeu solo:</p>
+					<p>Entraînez-vous dans un mode en solo et tentez de vous rapprochez le plus possible du cochonnet.
+					</br>Grâce à vos trois boules, ajustez votre lancer et réussissez le score parfait.</p>
+				</div>      
+			</p>
+		</div> 
+		<input type=button id ="retour" value="Retour" onClick="retour();"/>
+		<script>
+			function retour()
+				{
+					location.href = "./page%20de%20présentation.html"
+				}
+		</script>
+		<input type=button id ="sources" value="Sources" onClick="sources();"/>
+		<script>
+			function sources()
+			{
+				location.href = "./sources.html"
+			}
+		</script>
+</body>			
+
+</html>

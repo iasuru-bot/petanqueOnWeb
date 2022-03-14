@@ -1,0 +1,72 @@
+<!DOCTYPE html >
+<html >
+	<head >
+		<meta charset="utf-8" />
+		<meta name="Pétanque" content="Pétanque">
+		<title>Solo - PoT</title>
+		<link rel="stylesheet" href="mode solo.css">
+		<link rel="shortcut icon" href="http://www.iconj.com/ico/3/8/38fd64eand.ico" type="image/x-icon" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script src="mode solo.js" type="text/javascript"></script>
+	</head>
+
+	<body onLoad="draw()" >
+		
+	
+		<img id="terrain" src=https://zupimages.net/up/20/20/zrfj.png>
+		<img id="joueur" src=https://zupimages.net/up/20/12/l2a7.png>
+		<img id="boule_1" src=https://zupimages.net/up/20/12/ssax.png>
+		<img id="cochonnet" src=https://zupimages.net/up/20/12/dxf0.png>
+		
+		<div class='slidecontainer1'>
+			<input type='range' min="0" max="100" value="50" class="slider" id ='vitesse_initiale'>
+			<p id=m_vitesse>Force initiale: <span id="demo"></span>%</p>
+		</div>
+
+		<div class='slidecontainer2'>
+			<input type='range' min="0" max="90" value="45" class="slider" id ='angle_initial'>
+			<p id=m_angle>Angle initial: <span id="angle"></span>°</p>
+		</div>
+
+
+		<!-- Le script ci-dessous sert à afficher les valeurs de force et d'angles [POTENTIELLEMENT A RETIRER DUCOUP] -->	
+		<script>
+			var slider = document.getElementById("vitesse_initiale");
+			var output = document.getElementById("demo");
+			output.innerHTML = slider.value;
+			
+			slider.oninput = function() {
+			  output.innerHTML = this.value;
+			
+			}
+			var slider2 = document.getElementById("angle_initial");
+			var sortie = document.getElementById("angle");
+			sortie.innerHTML = slider2.value;
+			
+			slider2.oninput = function() {
+			  sortie.innerHTML = this.value;
+			}
+		</script>
+
+		<div id="affichage">
+			<fieldset>
+				<legend>
+				Résultat des scores:
+				</legend>
+				<p id=aff_coch_boule>Tu as tiré à <span id="aff_dist_coch_boule"></span> mètres du cochonnet</p>
+				<p id=aff_perso_boule>Tu as lancé à <span id="aff_dist_perso_boule"></span> mètres de toi</p>
+			</fieldset>
+			
+		</div>
+		</textarea>
+		<input type=button id="bouton_lancer" value="Let's go" onClick="traj();"/>
+		<input type=button id ="retour" value="Retour" onClick="retour();"/>
+		<script>
+			function retour()
+				{
+					location.href = "./page%20de%20présentation.html"
+				}
+		</script>
+	<audio id="musique" src="https://audio.jukehost.co.uk/9cad0ccc23cda151875cf7e4ee394b28f143571d/f2c2d52b30f" controls loop autoplay></audio>
+</body>			
+</html>

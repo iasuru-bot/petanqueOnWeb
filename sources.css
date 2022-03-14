@@ -1,0 +1,22 @@
+body
+	{
+    font-family: "Chesan Regular"'Open Sans', sans-serif;
+ 	src: local("./Chesan Regular.otf") format(".otf");
+	font-size: 23px;
+	
+	background-color: #78c6bb ;
+    background-position: top;
+    text-align: center;
+    }
+#retour{
+    border-radius:16px 0 16px 0;
+    background: #d34836;
+    border:none;
+    color:#fff;
+    font:bold 12px Verdana;
+    padding:8px 0 8px 0;
+    position: fixed;
+    }
+#sous_titre{
+    font-size: 30px;
+}    
